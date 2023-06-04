@@ -47,3 +47,10 @@ You can focus on simple, fundamental functionality or more advanced props usage,
 
 We prefer you implement your tests in TypeScript, but we also welcome submissions in javascript.
 Just implement your tests in `cypress/integration/DateRangePicker.spec.js`
+
+## Running the tests
+Run workflow from github [actions]([url](https://github.com/naiome/cypress-date-picker/actions)) 
+Run tests locally using `npx cypress run` to run headlessly or `npx cypress open` to run via the debugger
+
+## running tests locally will generate mochawesome reports that can be found under the reports folder
+
