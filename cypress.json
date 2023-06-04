@@ -1,3 +1,16 @@
 {
-  "baseUrl": "http://localhost:3000"
+  "baseUrl": "http://localhost:3000",
+  "theme": "dark",
+  "video": false,
+  "videoUploadOnPasses": false,
+  "screenshotOnRunFailure": true,
+  "screenshotsFolder": "cypress/reports/screenshots",
+  "videosFolder": "cypress/reports/videos",
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "reportDir": "cypress/results",
+    "overwrite": true,
+    "html": true,
+    "json": false
+  }
 }
