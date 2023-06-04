@@ -1,7 +1,5 @@
 name: Date Picker-tests
-push:
-  branches:
-    - 'main'
+on: [push]
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
