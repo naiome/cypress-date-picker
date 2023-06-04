@@ -7,6 +7,7 @@ describe('DateRangePicker', () => {
 
   it('Should render', () => {
     cy.get(datePickerPage.dateRangeSelect).should('be.visible');
+    cy.get(datePickerPage.dateSelectModal).should('be.visible');
   });
 
   it('Should close modal', () => {
@@ -16,7 +17,7 @@ describe('DateRangePicker', () => {
     cy.get(datePickerPage.dateSelectModal).should('not.exist');
   });
 
-  it('Selecting todays date', () => {
+  it('Selecting current date', () => {
     const formattedDateMMM = datePickerPage.formatDate(
       new Date(),
       'MMM DD, YYYY'
@@ -45,7 +46,7 @@ describe('DateRangePicker', () => {
     });
   });
 
-  it('Selecting current month', () => {
+  it('Selecting date range of current month', () => {
     const monthRange = datePickerPage.getCurrentMonthDates(new Date());
     const formattedDatesMMM = monthRange.map(([startDate, endDate]) => [
       datePickerPage.formatDate(startDate, 'MMM DD, YYYY'),
